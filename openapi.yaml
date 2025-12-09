@@ -1,0 +1,98 @@
+openapi: 3.0.4
+info:
+  title: HTML to Image
+  description: HTML to Image converts HTML code into high-quality images with customizable dimensions and formats including PNG, JPEG, and WebP.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/htmltoimage:
+    post:
+      summary: Convert HTML to Image
+      description: HTML to Image converts HTML code into high-quality images with customizable dimensions and formats including PNG, JPEG, and WebP.
+      operationId: htmltoimage
+      parameters: []
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  imageName: a27f201b-3413-4887-915f-d512d562ce0e.png
+                  format: .png
+                  downloadURL: https://storage.googleapis.com/apiverve.appspot.com/htmltoimage/a27f201b-3413-4887-915f-d512d562ce0e.png?GoogleAccessId=635500398038-compute%40developer.gserviceaccount.com&Expires=1764584703&Signature=C%2BWUOxfpzI0%2FzoEM0HjHaZjgQo3kSJJ8%2Fw530d5m2TmWzORT%2BoG%2Bx2WvUCgtDn6QPuuhh2R19Pj5SDvjB9afmsOHpWECxLLMkbirUsYf4k3xgT0wZkCqdWUEgzZWkW2VlIfkC6WWkfih0ea%2FjgNDGbicEHBaz0Dbuv9Lb%2FLiBZV%2FKXNJbn3MJhyh1nRcdJb2KtjLR%2Fp69Tt7aaE7FRRei%2FvbhpdYbqggmf%2FrUsucGaDfLnT1Yi3Gw6qASNLutW3g46cXh5zOHrFvbjjMeYJzJ%2FC1%2F6kk60mv1gVBtRNub9FVRUUfB0HAEjzRS6DXOUKtpyGIRsvcG2PlwQpUMBN1QQ%3D%3D
+                  expires: 1764584703738
+                  htmlLength: 197
+                  dimensions:
+                    width: 800
+                    height: 600
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                html:
+                  type: string
+                  description: HTML code to convert (max 500,000 characters)
+                  example: '<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>'
+                width:
+                  type: number
+                  description: Image width in pixels (100-3840)
+                  default: '1280'
+                  example: 800
+                height:
+                  type: number
+                  description: Image height in pixels (100-2160)
+                  default: '800'
+                  example: 600
+                format:
+                  type: string
+                  description: 'Image format: png, jpeg, jpg, webp'
+                  default: png
+                  example: png
+              required:
+              - html
+              example:
+                html: '<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>'
+                width: 800
+                height: 600
+                format: png
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
