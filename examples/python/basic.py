@@ -14,23 +14,14 @@ API_URL = 'https://api.apiverve.com/v1/htmltoimage'
 
 def call_htmltoimage_api():
     """
-    Make a POST request to the HTML to Image API
+    Make a GET request to the HTML to Image API
     """
     try:
-        # Request body
-        request_body &#x3D; {
-    &#x27;html&#x27;: &#x27;&lt;html&gt;&lt;head&gt;&lt;style&gt;body { font-family: Arial; padding: 20px; } h1 { color: #333; }&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;Hello World&lt;/h1&gt;&lt;p&gt;This is a sample HTML document converted to an image.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&#x27;,
-    &#x27;width&#x27;: 800,
-    &#x27;height&#x27;: 600,
-    &#x27;format&#x27;: &#x27;png&#x27;
-}
-
         headers = {
-            'x-api-key': API_KEY,
-            'Content-Type': 'application/json'
+            'x-api-key': API_KEY
         }
 
-        response = requests.post(API_URL, headers=headers, json=request_body)
+        response = requests.get(API_URL, headers=headers)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
