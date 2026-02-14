@@ -9,25 +9,15 @@ const API_KEY = process.env.APIVERVE_API_KEY || 'YOUR_API_KEY_HERE';
 const API_URL = 'https://api.apiverve.com/v1/htmltoimage';
 
 /**
- * Make a POST request to the HTML to Image API
+ * Make a GET request to the HTML to Image API
  */
 async function callHTMLtoImageAPI() {
   try {
-    // Request body
-    const requestBody &#x3D; {
-    &quot;html&quot;: &quot;&lt;html&gt;&lt;head&gt;&lt;style&gt;body { font-family: Arial; padding: 20px; } h1 { color: #333; }&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;Hello World&lt;/h1&gt;&lt;p&gt;This is a sample HTML document converted to an image.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&quot;,
-    &quot;width&quot;: 800,
-    &quot;height&quot;: 600,
-    &quot;format&quot;: &quot;png&quot;
-};
-
     const response = await fetch(API_URL, {
-      method: 'POST',
+      method: 'GET',
       headers: {
-        'x-api-key': API_KEY,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(requestBody)
+        'x-api-key': API_KEY
+      }
     });
 
     // Check if response is successful
