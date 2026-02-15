@@ -11,29 +11,25 @@ namespace APIVerve.API.HTMLtoImage
     public class HTMLtoImageQueryOptions
     {
         /// <summary>
-        /// HTML code to convert (max 500,000 characters)
-        /// Example: <html><body><h1>Hello</h1></body></html>
+        /// HTML code to convert
         /// </summary>
         [JsonProperty("html")]
         public string Html { get; set; }
 
         /// <summary>
-        /// Image width in pixels (100-3840)
-        /// Example: 1280
+        /// Image width in pixels
         /// </summary>
         [JsonProperty("width")]
         public string Width { get; set; }
 
         /// <summary>
-        /// Image height in pixels (100-2160)
-        /// Example: 800
+        /// Image height in pixels
         /// </summary>
         [JsonProperty("height")]
         public string Height { get; set; }
 
         /// <summary>
-        /// Image format: png, jpeg, jpg, webp
-        /// Example: png
+        /// Output image format
         /// </summary>
         [JsonProperty("format")]
         public string Format { get; set; }
