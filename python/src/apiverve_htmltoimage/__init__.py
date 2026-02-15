@@ -1,1 +1,3 @@
-from .apiClient import HtmltoimageAPIClient
+from .apiClient import HtmltoimageAPIClient, HtmltoimageAPIClientError
+
+__all__ = ['HtmltoimageAPIClient', 'HtmltoimageAPIClientError']
