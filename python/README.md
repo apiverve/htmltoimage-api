@@ -44,7 +44,12 @@ from apiverve_htmltoimage.apiClient import HtmltoimageAPIClient
 # Initialize the client with your APIVerve API key
 api = HtmltoimageAPIClient("[YOUR_API_KEY]")
 
-query = { "html": "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>", "width": 800, "height": 600, "format": "png" }
+query = {
+    "html": "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
+    "width": 800,
+    "height": 600,
+    "format": "png"
+}
 
 try:
     # Make the API call
@@ -82,7 +87,12 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "html": "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>", "width": 800, "height": 600, "format": "png" }
+query = {
+    "html": "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
+    "width": 800,
+    "height": 600,
+    "format": "png"
+}
 ```
 
 ###### Simple Request
@@ -128,7 +138,12 @@ from apiverve_htmltoimage.apiClient import HtmltoimageAPIClient, HtmltoimageAPIC
 
 api = HtmltoimageAPIClient("[YOUR_API_KEY]")
 
-query = { "html": "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>", "width": 800, "height": 600, "format": "png" }
+query = {
+    "html": "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
+    "width": 800,
+    "height": 600,
+    "format": "png"
+}
 
 try:
     result = api.execute(query)
@@ -149,7 +164,12 @@ from apiverve_htmltoimage.apiClient import HtmltoimageAPIClient, HtmltoimageAPIC
 
 api = HtmltoimageAPIClient("[YOUR_API_KEY]")
 
-query = { "html": "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>", "width": 800, "height": 600, "format": "png" }
+query = {
+    "html": "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
+    "width": 800,
+    "height": 600,
+    "format": "png"
+}
 
 try:
     result = api.execute(query)
@@ -183,7 +203,12 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_htmltoimage.apiClient import HtmltoimageAPIClient, HtmltoimageAPIClientError
 
-query = { "html": "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>", "width": 800, "height": 600, "format": "png" }
+query = {
+    "html": "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
+    "width": 800,
+    "height": 600,
+    "format": "png"
+}
 
 # Using context manager ensures proper cleanup
 with HtmltoimageAPIClient("[YOUR_API_KEY]") as api:
@@ -209,7 +234,12 @@ from apiverve_htmltoimage.apiClient import HtmltoimageAPIClient
 # Enable debug mode
 api = HtmltoimageAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "html": "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>", "width": 800, "height": 600, "format": "png" }
+query = {
+    "html": "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
+    "width": 800,
+    "height": 600,
+    "format": "png"
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -224,8 +254,14 @@ from apiverve_htmltoimage.apiClient import HtmltoimageAPIClient
 
 api = HtmltoimageAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "html": "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
+    "width": 800,
+    "height": 600,
+    "format": "png"
+}
+
 try:
-    query = { "html": "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>", "width": 800, "height": 600, "format": "png" }
     result = api.execute(query)
     print(result)
 finally:
