@@ -26,7 +26,7 @@ Add the dependency:
 
 ```gradle
 dependencies {
-    implementation 'com.github.apiverve:htmltoimage-api:1.1.13'
+    implementation 'com.github.apiverve:htmltoimage-api:1.1.14'
 }
 ```
 
@@ -47,9 +47,9 @@ HTMLtoImageAPIClient client = new HTMLtoImageAPIClient("YOUR_API_KEY");
 try {
     // Prepare request parameters
     Map<String, Object> parameters = new HashMap<>();
-    parameters.put("html", "<html><body><h1>Hello</h1></body></html>");
-    parameters.put("width", 1280);
-    parameters.put("height", 800);
+    parameters.put("html", "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>");
+    parameters.put("width", 800);
+    parameters.put("height", 600);
     parameters.put("format", "png");
 
     // Execute the request
