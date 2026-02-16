@@ -15,7 +15,10 @@ The HTML to Image API provides a simple, reliable way to integrate html to image
 [![npm](https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white)](https://www.npmjs.com/package/@apiverve/htmltoimage)
 [![NuGet](https://img.shields.io/badge/NuGet-004880?style=flat&logo=nuget&logoColor=white)](https://www.nuget.org/packages/APIVerve.API.HTMLtoImage)
 [![PyPI](https://img.shields.io/badge/PyPI-3776AB?style=flat&logo=python&logoColor=white)](https://pypi.org/project/apiverve-htmltoimage/)
+[![RubyGems](https://img.shields.io/badge/RubyGems-E9573F?style=flat&logo=rubygems&logoColor=white)](https://rubygems.org/gems/apiverve_htmltoimage)
+[![Packagist](https://img.shields.io/badge/Packagist-F28D1A?style=flat&logo=packagist&logoColor=white)](https://packagist.org/packages/apiverve/htmltoimage)
 [![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)](#-go)
+[![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat&logo=dart&logoColor=white)](https://pub.dev/packages/apiverve_htmltoimage)
 [![JitPack](https://img.shields.io/badge/JitPack-2E7D32?style=flat&logo=android&logoColor=white)](#-android-jitpack)
 
 ---
@@ -88,6 +91,36 @@ pip install apiverve-htmltoimage
 ```
 
 [**View PyPI Package →**](https://pypi.org/project/apiverve-htmltoimage/) | [**Package Code →**](./python/)
+
+---
+
+### 💎 Ruby (RubyGems)
+
+```bash
+gem install apiverve_htmltoimage
+```
+
+[**View RubyGems Package →**](https://rubygems.org/gems/apiverve_htmltoimage) | [**Package Code →**](./ruby/)
+
+---
+
+### 🐘 PHP (Packagist)
+
+```bash
+composer require apiverve/htmltoimage
+```
+
+[**View Packagist Package →**](https://packagist.org/packages/apiverve/htmltoimage) | [**Package Code →**](./php/)
+
+---
+
+### 🎯 Dart (pub.dev)
+
+```bash
+dart pub add apiverve_htmltoimage
+```
+
+[**View pub.dev Package →**](https://pub.dev/packages/apiverve_htmltoimage) | [**Package Code →**](./dart/)
 
 ---
 
