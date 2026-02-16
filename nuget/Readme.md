@@ -61,10 +61,10 @@ class Program
         var apiClient = new HTMLtoImageAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new QueryOptions {
-  html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
-  width = 800,
-  height = 600,
-  format = "png"
+    html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
+    width = 800,
+    height = 600,
+    format = "png"
 };
 
         // Make the API call
@@ -128,10 +128,10 @@ public class Example
         var apiClient = new HTMLtoImageAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new QueryOptions {
-  html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
-  width = 800,
-  height = 600,
-  format = "png"
+    html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
+    width = 800,
+    height = 600,
+    format = "png"
 };
 
         var response = await apiClient.ExecuteAsync(queryOptions);
@@ -163,10 +163,10 @@ public class Example
         var apiClient = new HTMLtoImageAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new QueryOptions {
-  html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
-  width = 800,
-  height = 600,
-  format = "png"
+    html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
+    width = 800,
+    height = 600,
+    format = "png"
 };
 
         var response = apiClient.Execute(queryOptions);
@@ -203,10 +203,10 @@ public class Example
         var apiClient = new HTMLtoImageAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new QueryOptions {
-  html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
-  width = 800,
-  height = 600,
-  format = "png"
+    html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
+    width = 800,
+    height = 600,
+    format = "png"
 };
 
         try
@@ -262,10 +262,10 @@ public class Example
         apiClient.SetRetryDelay(2000);     // Wait 2 seconds between retries
 
         var queryOptions = new QueryOptions {
-  html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
-  width = 800,
-  height = 600,
-  format = "png"
+    html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
+    width = 800,
+    height = 600,
+    format = "png"
 };
 
         try
@@ -306,10 +306,10 @@ apiClient.AddCustomHeader("X-Custom-Header", "custom-value");
 apiClient.AddCustomHeader("X-Request-ID", Guid.NewGuid().ToString());
 
 var queryOptions = new QueryOptions {
-  html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
-  width = 800,
-  height = 600,
-  format = "png"
+    html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
+    width = 800,
+    height = 600,
+    format = "png"
 };
 
 var response = await apiClient.ExecuteAsync(queryOptions);
@@ -335,10 +335,10 @@ apiClient.SetLogger(message =>
 });
 
 var queryOptions = new QueryOptions {
-  html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
-  width = 800,
-  height = 600,
-  format = "png"
+    html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
+    width = 800,
+    height = 600,
+    format = "png"
 };
 
 var response = await apiClient.ExecuteAsync(queryOptions);
@@ -356,10 +356,10 @@ apiClient.SetMaxRetries(3);           // Retry up to 3 times (default: 0, max: 3
 apiClient.SetRetryDelay(1500);        // Wait 1.5 seconds between retries (default: 1000ms)
 
 var queryOptions = new QueryOptions {
-  html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
-  width = 800,
-  height = 600,
-  format = "png"
+    html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
+    width = 800,
+    height = 600,
+    format = "png"
 };
 
 var response = await apiClient.ExecuteAsync(queryOptions);
@@ -370,14 +370,15 @@ var response = await apiClient.ExecuteAsync(queryOptions);
 The API client implements `IDisposable` for proper resource cleanup:
 
 ```csharp
+var queryOptions = new QueryOptions {
+    html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
+    width = 800,
+    height = 600,
+    format = "png"
+};
+
 using (var apiClient = new HTMLtoImageAPIClient("[YOUR_API_KEY]"))
 {
-    var queryOptions = new QueryOptions {
-  html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
-  width = 800,
-  height = 600,
-  format = "png"
-};
     var response = await apiClient.ExecuteAsync(queryOptions);
     Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(response, Newtonsoft.Json.Formatting.Indented));
 }
