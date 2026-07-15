@@ -12,8 +12,15 @@ public class BasicExample {
         HTMLtoImageAPIClient client = new HTMLtoImageAPIClient("YOUR_API_KEY_HERE");
 
         try {
-            // Execute the API request (no parameters required)
-            APIResponse response = client.execute(null);
+            // Request body
+            Map&lt;String, Object&gt; parameters &#x3D; new HashMap&lt;&gt;();
+        parameters.put(&quot;html&quot;, &quot;&lt;html&gt;&lt;head&gt;&lt;style&gt;body { font-family: Arial; padding: 20px; } h1 { color: #333; }&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;Hello World&lt;/h1&gt;&lt;p&gt;This is a sample HTML document converted to an image.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&quot;);
+        parameters.put(&quot;width&quot;, 800);
+        parameters.put(&quot;height&quot;, 600);
+        parameters.put(&quot;format&quot;, &quot;png&quot;);
+
+            // Execute the API request
+            APIResponse response = client.execute(parameters);
 
             // Check if the request was successful
             if (response.isSuccess()) {
