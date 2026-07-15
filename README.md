@@ -8,7 +8,7 @@ The HTML to Image API provides a simple, reliable way to integrate html to image
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://htmltoimage.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
-[![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
+[![Method](https://img.shields.io/badge/Method-POST-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
 **Available on:**
@@ -30,11 +30,20 @@ The HTML to Image API provides a simple, reliable way to integrate html to image
 ```javascript
 async function callHTMLtoImageAPI() {
     try {
+        const requestBody = {
+    "html": "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
+    "width": 800,
+    "height": 600,
+    "format": "png"
+};
+
         const response = await fetch('https://api.apiverve.com/v1/htmltoimage', {
-            method: 'GET',
+            method: 'POST',
             headers: {
-                'x-api-key': 'YOUR_API_KEY_HERE'
-            }
+                'x-api-key': 'YOUR_API_KEY_HERE',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(requestBody)
         });
 
         const data = await response.json();
@@ -50,8 +59,15 @@ callHTMLtoImageAPI();
 ### Using cURL
 
 ```bash
-curl -X GET "https://api.apiverve.com/v1/htmltoimage?param=value" \
-  -H "x-api-key: YOUR_API_KEY_HERE"
+curl -X POST "https://api.apiverve.com/v1/htmltoimage" \
+  -H "x-api-key: YOUR_API_KEY_HERE" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "html": "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
+    "width": 800,
+    "height": 600,
+    "format": "png"
+}'
 ```
 
 **Get your API key:** [https://apiverve.com](https://apiverve.com)
@@ -150,7 +166,7 @@ go get github.com/apiverve/htmltoimage-api/go
 |---------|---------|
 | **Multi-language SDKs** | Native packages for JavaScript, Python, C#, Go, and Android |
 | **Simple Integration** | Single API key authentication, consistent response format |
-| **Production Ready** | 99.9% uptime, fast response times, used by thousands of developers |
+| **Production Ready** | 99.9% uptime SLA, served from 24 global regions |
 | **Comprehensive Docs** | Full examples, OpenAPI spec, and dedicated support |
 
 ---
@@ -169,7 +185,7 @@ go get github.com/apiverve/htmltoimage-api/go
 The HTML to Image API is commonly used for:
 
 - **Web Applications** - Add html to image features to your frontend or backend
-- **Mobile Apps** - Native SDKs for iOS and Android development
+- **Mobile Apps** - Native SDKs for Android development
 - **Automation** - Integrate with n8n, Zapier, or custom workflows
 - **SaaS Products** - Enhance your product with html to image capabilities
 - **Data Pipelines** - Process and analyze data at scale
