@@ -51,7 +51,7 @@ Here's a simple example to get you started quickly:
 
 ```csharp
 using System;
-using APIVerve;
+using APIVerve.API.HTMLtoImage;
 
 class Program
 {
@@ -60,7 +60,7 @@ class Program
         // Initialize the API client
         var apiClient = new HTMLtoImageAPIClient("[YOUR_API_KEY]");
 
-        var queryOptions = new QueryOptions {
+        var queryOptions = new HTMLtoImageQueryOptions {
     html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
     width = 800,
     height = 600,
@@ -119,7 +119,7 @@ The modern async/await pattern provides the best performance and code readabilit
 ```csharp
 using System;
 using System.Threading.Tasks;
-using APIVerve;
+using APIVerve.API.HTMLtoImage;
 
 public class Example
 {
@@ -127,7 +127,7 @@ public class Example
     {
         var apiClient = new HTMLtoImageAPIClient("[YOUR_API_KEY]");
 
-        var queryOptions = new QueryOptions {
+        var queryOptions = new HTMLtoImageQueryOptions {
     html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
     width = 800,
     height = 600,
@@ -154,7 +154,7 @@ If you need to use synchronous code, you can use the `Execute` method:
 
 ```csharp
 using System;
-using APIVerve;
+using APIVerve.API.HTMLtoImage;
 
 public class Example
 {
@@ -162,7 +162,7 @@ public class Example
     {
         var apiClient = new HTMLtoImageAPIClient("[YOUR_API_KEY]");
 
-        var queryOptions = new QueryOptions {
+        var queryOptions = new HTMLtoImageQueryOptions {
     html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
     width = 800,
     height = 600,
@@ -194,7 +194,7 @@ The API client provides comprehensive error handling. Here are some examples:
 ```csharp
 using System;
 using System.Threading.Tasks;
-using APIVerve;
+using APIVerve.API.HTMLtoImage;
 
 public class Example
 {
@@ -202,7 +202,7 @@ public class Example
     {
         var apiClient = new HTMLtoImageAPIClient("[YOUR_API_KEY]");
 
-        var queryOptions = new QueryOptions {
+        var queryOptions = new HTMLtoImageQueryOptions {
     html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
     width = 800,
     height = 600,
@@ -249,7 +249,7 @@ public class Example
 ```csharp
 using System;
 using System.Threading.Tasks;
-using APIVerve;
+using APIVerve.API.HTMLtoImage;
 
 public class Example
 {
@@ -261,7 +261,7 @@ public class Example
         apiClient.SetMaxRetries(3);        // Retry up to 3 times (default: 0, max: 3)
         apiClient.SetRetryDelay(2000);     // Wait 2 seconds between retries
 
-        var queryOptions = new QueryOptions {
+        var queryOptions = new HTMLtoImageQueryOptions {
     html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
     width = 800,
     height = 600,
@@ -305,7 +305,7 @@ var apiClient = new HTMLtoImageAPIClient("[YOUR_API_KEY]");
 apiClient.AddCustomHeader("X-Custom-Header", "custom-value");
 apiClient.AddCustomHeader("X-Request-ID", Guid.NewGuid().ToString());
 
-var queryOptions = new QueryOptions {
+var queryOptions = new HTMLtoImageQueryOptions {
     html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
     width = 800,
     height = 600,
@@ -334,7 +334,7 @@ apiClient.SetLogger(message =>
     Console.WriteLine($"[LOG] {DateTime.Now:yyyy-MM-dd HH:mm:ss} - {message}");
 });
 
-var queryOptions = new QueryOptions {
+var queryOptions = new HTMLtoImageQueryOptions {
     html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
     width = 800,
     height = 600,
@@ -355,7 +355,7 @@ var apiClient = new HTMLtoImageAPIClient("[YOUR_API_KEY]");
 apiClient.SetMaxRetries(3);           // Retry up to 3 times (default: 0, max: 3)
 apiClient.SetRetryDelay(1500);        // Wait 1.5 seconds between retries (default: 1000ms)
 
-var queryOptions = new QueryOptions {
+var queryOptions = new HTMLtoImageQueryOptions {
     html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
     width = 800,
     height = 600,
@@ -370,7 +370,7 @@ var response = await apiClient.ExecuteAsync(queryOptions);
 The API client implements `IDisposable` for proper resource cleanup:
 
 ```csharp
-var queryOptions = new QueryOptions {
+var queryOptions = new HTMLtoImageQueryOptions {
     html = "<html><head><style>body { font-family: Arial; padding: 20px; } h1 { color: #333; }</style></head><body><h1>Hello World</h1><p>This is a sample HTML document converted to an image.</p></body></html>",
     width = 800,
     height = 600,
@@ -394,10 +394,10 @@ using (var apiClient = new HTMLtoImageAPIClient("[YOUR_API_KEY]"))
   "status": "ok",
   "error": null,
   "data": {
-    "imageName": "a27f201b-3413-4887-915f-d512d562ce0e.png",
+    "imageName": "79c8416d-8096-4524-adea-a948eb69a21e.png",
     "format": ".png",
-    "downloadURL": "https://storage.googleapis.com/apiverve.appspot.com/htmltoimage/a27f201b-3413-4887-915f-d512d562ce0e.png?GoogleAccessId=635500398038-compute%40developer.gserviceaccount.com&Expires=1764584703&Signature=C%2BWUOxfpzI0%2FzoEM0HjHaZjgQo3kSJJ8%2Fw530d5m2TmWzORT%2BoG%2Bx2WvUCgtDn6QPuuhh2R19Pj5SDvjB9afmsOHpWECxLLMkbirUsYf4k3xgT0wZkCqdWUEgzZWkW2VlIfkC6WWkfih0ea%2FjgNDGbicEHBaz0Dbuv9Lb%2FLiBZV%2FKXNJbn3MJhyh1nRcdJb2KtjLR%2Fp69Tt7aaE7FRRei%2FvbhpdYbqggmf%2FrUsucGaDfLnT1Yi3Gw6qASNLutW3g46cXh5zOHrFvbjjMeYJzJ%2FC1%2F6kk60mv1gVBtRNub9FVRUUfB0HAEjzRS6DXOUKtpyGIRsvcG2PlwQpUMBN1QQ%3D%3D",
-    "expires": 1764584703738,
+    "downloadURL": "https://storage.googleapis.com/apiverve/APIData/htmltoimage/79c8416d-8096-4524-adea-a948eb69a21e.png?GoogleAccessId=635500398038-compute%40developer.gserviceaccount.com&Expires=1766010253&Signature=JEtYi%2BDdd0thnSSDWLXWCAbxVJAt6gu8khy9B0UCZSM0uXYrHLv%2F07Ht97jN%2B%2BvzQg0yP0PVUzqwrfkoC4pNEUXLzdP743iCmBEsaQqtstK5OkZR0a%2F%2FSt6UmyxQ4eWCxS7DR2pY3yBYvslzzjlBgF9ASfymgzztwvpowPR7QttziwLMzJOX5aVgstMDfEuOthcCPwRsv8lVShYAQGBYk2ZVCxIQ8HrRi38VQlEG30w%2Fgh2Lo7Xd4%2FaAuvFyG3atL4PkScoemYeHNAws4EcdxDFY69jXpffs6BHrc2OQ7U9rCC7s6p1B%2BUT7ODFFheq432OXb%2BI2p3wfOGJB4dtoQQ%3D%3D",
+    "expires": 1766010253596,
     "htmlLength": 197,
     "dimensions": {
       "width": 800,
