@@ -1,0 +1,49 @@
+{
+    "name": "apiverve/htmltoimage",
+    "description": "HTML to Image converts HTML code into high-quality images with customizable dimensions and formats including PNG, JPEG, and WebP.",
+    "version": "1.2.0",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "APIVerve",
+            "email": "hello@apiverve.com",
+            "homepage": "https://apiverve.com"
+        }
+    ],
+    "keywords": [
+        "api",
+        "apiverve",
+        "htmltoimage",
+        "html to image",
+        "screenshot",
+        "html renderer",
+        "image generator",
+        "html converter"
+    ],
+    "homepage": "https://htmltoimage.apiverve.com?utm_source=php&utm_medium=homepage",
+    "support": {
+        "email": "hello@apiverve.com",
+        "docs": "https://docs.apiverve.com/ref/htmltoimage",
+        "source": "https://github.com/apiverve/htmltoimage-API/tree/main/php"
+    },
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "APIVerve\\Htmltoimage\\": "php/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "APIVerve\\Htmltoimage\\Tests\\": "php/tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
