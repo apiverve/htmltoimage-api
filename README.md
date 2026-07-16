@@ -203,11 +203,36 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the HTML to Image API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "imageName": "79c8416d-8096-4524-adea-a948eb69a21e.png",
+    "format": ".png",
+    "downloadURL": "https://storage.googleapis.com/apiverve/APIData/htmltoimage/79c8416d-8096-4524-adea-a948eb69a21e.png?GoogleAccessId=635500398038-compute%40developer.gserviceaccount.com&Expires=1766010253&Signature=JEtYi%2BDdd0thnSSDWLXWCAbxVJAt6gu8khy9B0UCZSM0uXYrHLv%2F07Ht97jN%2B%2BvzQg0yP0PVUzqwrfkoC4pNEUXLzdP743iCmBEsaQqtstK5OkZR0a%2F%2FSt6UmyxQ4eWCxS7DR2pY3yBYvslzzjlBgF9ASfymgzztwvpowPR7QttziwLMzJOX5aVgstMDfEuOthcCPwRsv8lVShYAQGBYk2ZVCxIQ8HrRi38VQlEG30w%2Fgh2Lo7Xd4%2FaAuvFyG3atL4PkScoemYeHNAws4EcdxDFY69jXpffs6BHrc2OQ7U9rCC7s6p1B%2BUT7ODFFheq432OXb%2BI2p3wfOGJB4dtoQQ%3D%3D",
+    "expires": 1766010253596,
+    "htmlLength": 197,
+    "dimensions": {
+      "width": 800,
+      "height": 600
+    }
+  }
 }
 ```
 
