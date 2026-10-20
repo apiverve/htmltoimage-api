@@ -1,13 +1,10 @@
 # HTML to Image API
 
-HTML to Image converts HTML code into high-quality images with customizable dimensions and formats including PNG, JPEG, and WebP.
+HTML to Image is an HTML to image API that renders HTML code into a high-quality PNG image. Paid plans add custom dimensions and JPEG or WebP output.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 [![npm version](https://img.shields.io/npm/v/@apiverve/htmltoimage.svg)](https://www.npmjs.com/package/@apiverve/htmltoimage)
 
-This is a Javascript Wrapper for the [HTML to Image API](https://htmltoimage.apiverve.com?utm_source=npm&utm_medium=readme)
+This is a JavaScript wrapper for the [HTML to Image API](https://apiverve.com/marketplace/htmltoimage?utm_source=npm&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -28,15 +25,15 @@ yarn add @apiverve/htmltoimage
 ## Configuration
 
 Before using the HTML to Image API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=npm&utm_medium=readme)
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=npm&utm_medium=referral&utm_content=readme)
 
 ---
 
 ## Quick Start
 
-[Get started with the Quick Start Guide](https://docs.apiverve.com/quickstart?utm_source=npm&utm_medium=readme)
+[Get started with the Quick Start Guide](https://docs.apiverve.com/quickstart?utm_source=npm&utm_medium=referral&utm_content=readme)
 
-The HTML to Image API documentation is found here: [https://docs.apiverve.com/ref/htmltoimage](https://docs.apiverve.com/ref/htmltoimage?utm_source=npm&utm_medium=readme).
+The HTML to Image API documentation is found here: [https://docs.apiverve.com/ref/htmltoimage](https://docs.apiverve.com/ref/htmltoimage?utm_source=npm&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -131,15 +128,13 @@ async function makeRequest() {
   "status": "ok",
   "error": null,
   "data": {
-    "imageName": "79c8416d-8096-4524-adea-a948eb69a21e.png",
-    "format": ".png",
-    "downloadURL": "https://storage.googleapis.com/apiverve/APIData/htmltoimage/79c8416d-8096-4524-adea-a948eb69a21e.png?GoogleAccessId=635500398038-compute%40developer.gserviceaccount.com&Expires=1766010253&Signature=JEtYi%2BDdd0thnSSDWLXWCAbxVJAt6gu8khy9B0UCZSM0uXYrHLv%2F07Ht97jN%2B%2BvzQg0yP0PVUzqwrfkoC4pNEUXLzdP743iCmBEsaQqtstK5OkZR0a%2F%2FSt6UmyxQ4eWCxS7DR2pY3yBYvslzzjlBgF9ASfymgzztwvpowPR7QttziwLMzJOX5aVgstMDfEuOthcCPwRsv8lVShYAQGBYk2ZVCxIQ8HrRi38VQlEG30w%2Fgh2Lo7Xd4%2FaAuvFyG3atL4PkScoemYeHNAws4EcdxDFY69jXpffs6BHrc2OQ7U9rCC7s6p1B%2BUT7ODFFheq432OXb%2BI2p3wfOGJB4dtoQQ%3D%3D",
-    "expires": 1766010253596,
-    "htmlLength": 197,
-    "dimensions": {
-      "width": 800,
-      "height": 600
-    }
+    "width": 800,
+    "height": 600,
+    "format": "png",
+    "imageName": "bf3d3d67-bc6e-477b-a916-560b895f8091.png",
+    "expires": 1789676439207,
+    "downloadURL": "https://storage.googleapis.com/apiverve/APIData/htmltoimage/bf3d3d67-bc6e-477b-a916-560b895f8091.png?GoogleAccessId=635500398038-compute%40developer.gserviceaccount.com&Expires=1789676439&Signature=Uw7imp8TVuygEgWhdLAmK8%2Byk0NoZmtdLEX9MrDHjlWDYyB28y7zbCxVuD%2BF%2F6Iij5zi%2FhvDoJnuhNT6a2Yl85gw5nWGt750Ai4gup46dQQt0vrsUpD99IPTfTh21DWd4WqE7VCWlIlou7WwNUn620WgWM3ScGi13dCB81Qyb4WuxrdcNal8WrUYX9nZ12h%2B7BZs65Tyw0V4StbvsYxXKqySkF4aQ8J1QbdhUny9WyptE3qNT%2FyM4m2%2F%2FJAOq32bQsSWj8%2BycWEhtifIgpJe4LTBBeqtHBePrIQSrYNRdOwhjaTzj%2BShSeox5wPztiaoRyi1DGIx4FIIstS2dAdQ6Q%3D%3D",
+    "htmlLength": 197
   }
 }
 ```
@@ -148,7 +143,7 @@ async function makeRequest() {
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=npm&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=npm&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -160,12 +155,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=npm&utm_medium=readme), [Privacy Policy](https://apiverve.com/privacy?utm_source=npm&utm_medium=readme), and [Refund Policy](https://apiverve.com/refund?utm_source=npm&utm_medium=readme).
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=npm&utm_medium=referral&utm_content=readme) and [Privacy Policy](https://apiverve.com/privacy?utm_source=npm&utm_medium=referral&utm_content=readme).
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 

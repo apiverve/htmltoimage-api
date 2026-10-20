@@ -25,17 +25,13 @@ declare module '@apiverve/htmltoimage' {
 
 
   interface HTMLtoImageData {
-      imageName:   null | string;
+      width:       number | null;
+      height:      number | null;
       format:      null | string;
-      downloadURL: null | string;
+      imageName:   null | string;
       expires:     number | null;
+      downloadURL: null | string;
       htmlLength:  number | null;
-      dimensions:  Dimensions;
-  }
-  
-  interface Dimensions {
-      width:  number | null;
-      height: number | null;
   }
 
   export default class htmltoimageWrapper {

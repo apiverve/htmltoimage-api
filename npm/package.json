@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/htmltoimage",
-  "version": "1.2.0",
-  "description": "HTML to Image converts HTML code into high-quality images with customizable dimensions and formats including PNG, JPEG, and WebP.",
+  "version": "1.2.2",
+  "description": "HTML to Image is an HTML to image API that renders HTML code into a high-quality PNG image. Paid plans add custom dimensions and JPEG or WebP output.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "html to image", "screenshot", "html renderer", "image generator", "html converter"
+    "html to image api", "html to png api", "html code to image", "generate image from html code", "html to image converter"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/htmltoimage-api/issues"
   },
-  "homepage": "https://htmltoimage.apiverve.com?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/htmltoimage?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
