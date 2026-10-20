@@ -32,32 +32,26 @@ namespace APIVerve.API.HTMLtoImage
 
     public partial class Data
     {
-        [JsonProperty("imageName")]
-        public string ImageName { get; set; }
-
-        [JsonProperty("format")]
-        public string Format { get; set; }
-
-        [JsonProperty("downloadURL")]
-        public Uri DownloadUrl { get; set; }
-
-        [JsonProperty("expires")]
-        public long? Expires { get; set; }
-
-        [JsonProperty("htmlLength")]
-        public long? HtmlLength { get; set; }
-
-        [JsonProperty("dimensions")]
-        public Dimensions Dimensions { get; set; }
-    }
-
-    public partial class Dimensions
-    {
         [JsonProperty("width")]
         public long? Width { get; set; }
 
         [JsonProperty("height")]
         public long? Height { get; set; }
+
+        [JsonProperty("format")]
+        public string Format { get; set; }
+
+        [JsonProperty("imageName")]
+        public string ImageName { get; set; }
+
+        [JsonProperty("expires")]
+        public long? Expires { get; set; }
+
+        [JsonProperty("downloadURL")]
+        public Uri DownloadUrl { get; set; }
+
+        [JsonProperty("htmlLength")]
+        public long? HtmlLength { get; set; }
     }
 
     public partial class Premium
