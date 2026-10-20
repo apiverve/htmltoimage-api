@@ -1,13 +1,13 @@
-# [HTML to Image API](https://htmltoimage.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [HTML to Image API](https://apiverve.com/marketplace/htmltoimage?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-HTML to Image converts HTML code into high-quality images with customizable dimensions and formats including PNG, JPEG, and WebP.
+HTML to Image is an HTML to image API that renders HTML code into a high-quality PNG image. Paid plans add custom dimensions and JPEG or WebP output.
 
 The HTML to Image API provides a simple, reliable way to integrate html to image functionality into your applications. Built for developers who need production-ready html to image capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://htmltoimage.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/htmltoimage?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://htmltoimage.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/htmltoimage?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-POST-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -173,7 +173,7 @@ go get github.com/apiverve/htmltoimage-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [HTML to Image API](https://htmltoimage.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [HTML to Image API](https://apiverve.com/marketplace/htmltoimage?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/htmltoimage](https://docs.apiverve.com/ref/htmltoimage)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -223,15 +223,13 @@ A real response from the HTML to Image API:
   "status": "ok",
   "error": null,
   "data": {
-    "imageName": "79c8416d-8096-4524-adea-a948eb69a21e.png",
-    "format": ".png",
-    "downloadURL": "https://storage.googleapis.com/apiverve/APIData/htmltoimage/79c8416d-8096-4524-adea-a948eb69a21e.png?GoogleAccessId=635500398038-compute%40developer.gserviceaccount.com&Expires=1766010253&Signature=JEtYi%2BDdd0thnSSDWLXWCAbxVJAt6gu8khy9B0UCZSM0uXYrHLv%2F07Ht97jN%2B%2BvzQg0yP0PVUzqwrfkoC4pNEUXLzdP743iCmBEsaQqtstK5OkZR0a%2F%2FSt6UmyxQ4eWCxS7DR2pY3yBYvslzzjlBgF9ASfymgzztwvpowPR7QttziwLMzJOX5aVgstMDfEuOthcCPwRsv8lVShYAQGBYk2ZVCxIQ8HrRi38VQlEG30w%2Fgh2Lo7Xd4%2FaAuvFyG3atL4PkScoemYeHNAws4EcdxDFY69jXpffs6BHrc2OQ7U9rCC7s6p1B%2BUT7ODFFheq432OXb%2BI2p3wfOGJB4dtoQQ%3D%3D",
-    "expires": 1766010253596,
-    "htmlLength": 197,
-    "dimensions": {
-      "width": 800,
-      "height": 600
-    }
+    "width": 800,
+    "height": 600,
+    "format": "png",
+    "imageName": "bf3d3d67-bc6e-477b-a916-560b895f8091.png",
+    "expires": 1789676439207,
+    "downloadURL": "https://storage.googleapis.com/apiverve/APIData/htmltoimage/bf3d3d67-bc6e-477b-a916-560b895f8091.png?GoogleAccessId=635500398038-compute%40developer.gserviceaccount.com&Expires=1789676439&Signature=Uw7imp8TVuygEgWhdLAmK8%2Byk0NoZmtdLEX9MrDHjlWDYyB28y7zbCxVuD%2BF%2F6Iij5zi%2FhvDoJnuhNT6a2Yl85gw5nWGt750Ai4gup46dQQt0vrsUpD99IPTfTh21DWd4WqE7VCWlIlou7WwNUn620WgWM3ScGi13dCB81Qyb4WuxrdcNal8WrUYX9nZ12h%2B7BZs65Tyw0V4StbvsYxXKqySkF4aQ8J1QbdhUny9WyptE3qNT%2FyM4m2%2F%2FJAOq32bQsSWj8%2BycWEhtifIgpJe4LTBBeqtHBePrIQSrYNRdOwhjaTzj%2BShSeox5wPztiaoRyi1DGIx4FIIstS2dAdQ6Q%3D%3D",
+    "htmlLength": 197
   }
 }
 ```
@@ -240,7 +238,7 @@ A real response from the HTML to Image API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [HTML to Image API](https://htmltoimage.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [HTML to Image API](https://apiverve.com/marketplace/htmltoimage?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
