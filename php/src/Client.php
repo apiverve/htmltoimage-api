@@ -19,7 +19,7 @@ use APIVerve\Htmltoimage\Exceptions\ValidationException;
  * print_r($response);
  * ```
  *
- * @see https://htmltoimage.apiverve.com?utm_source=php&utm_medium=readme
+ * @see https://apiverve.com/marketplace/htmltoimage?utm_source=php&utm_medium=referral&utm_content=readme
  */
 class Client
 {
