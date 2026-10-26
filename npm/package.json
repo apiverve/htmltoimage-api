@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/htmltoimage",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "HTML to Image is an HTML to image API that renders HTML code into a high-quality PNG image. Paid plans add custom dimensions and JPEG or WebP output.",
   "main": "index.js",
   "types": "index.d.ts",
