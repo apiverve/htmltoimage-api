@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// HTML to Image API client.
 ///
-/// For more information, visit: https://htmltoimage.apiverve.com?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/htmltoimage?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [html] (required) - HTML code to convert [maxLength: 500000]
