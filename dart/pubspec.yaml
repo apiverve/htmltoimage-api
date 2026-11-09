@@ -1,6 +1,6 @@
 name: apiverve_htmltoimage
 description: "HTML to Image is an HTML to image API that renders HTML code into a high-quality PNG image. Paid plans add custom dimensions and JPEG or WebP output."
-version: 1.2.4
+version: 1.2.5
 homepage: https://apiverve.com/marketplace/htmltoimage?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/htmltoimage-api/tree/main/dart
 
